@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://chndrsh25:n1pmPEEwpsmwOz0D@cluster0.kxa9e.mongodb.net/');
+mongoose.connect('');
 
 // Define schemas
 const AdminSchema = new mongoose.Schema({
@@ -23,7 +23,6 @@ const CourseSchema = new mongoose.Schema({
     description: String,
     imageLink: String,
     price: Number
-
 });
 
 const Admin = mongoose.model('Admin', AdminSchema);
